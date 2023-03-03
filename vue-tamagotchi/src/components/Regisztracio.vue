@@ -7,16 +7,16 @@
         <div class="row mb-3 p-4">
             <div class="col">
                 <form @submit.prevent="$emit('registerUser', newUser)">
-                    <label for="username">Username</label><br>
+                    <label for="username">Felhasználónév</label><br>
                     <input type="text" name="username" id="username" class="form-control" v-model="newUser.username">
 
-                    <label for="password">Password</label><br>
+                    <label for="password">Jelszó</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
-                    <label for="password_confirmation">Password Again</label><br>
+                    <label for="password_confirmation">Jelszó újra</label><br>
                     <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" v-model="newUser.password_confirmation">
                     <br>
-                    <button class="btn btn-warning text-dark" type="submit">Sign Up</button>
-                    <button class="btn btn-warning text-dark" @click="redirect()">Login</button>
+                    <button class="btn btn-warning text-dark" type="submit">Regisztráció</button>
+                    <button class="btn btn-warning text-dark" @click="redirect()">Bejelentkezés</button>
                 </form>
             </div>
         </div>

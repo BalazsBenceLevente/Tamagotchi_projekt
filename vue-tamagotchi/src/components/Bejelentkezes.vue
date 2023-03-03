@@ -1,24 +1,24 @@
 <template>
         <div class="row mb-3">
             <div class="col">
-                <h2>Login</h2>
+                <h2>Bejelentkezés</h2>
             </div>
         </div>
         <div class="row mb-3 p-4">
             <div class="col">
                 <form @submit.prevent="login">
-                    <label for="username">Username:</label><br>
+                    <label for="username">Felhasználónév:</label><br>
                     <input type="text" name="username" id="username" class="form-control" v-model="userData.username">
 
-                    <label for="password">Password:</label> <br>
+                    <label for="password">Jelszó:</label> <br>
                     <input type="password" name="password" id="password" class="form-control" v-model="userData.password">
                     <br>
-                    <button class="btn btn-warning" type="submit">Login</button>
+                    <button class="btn btn-warning" type="submit"></button>
                 </form>
             </div>
         </div>
         <div class="row mb-3">
-                <Router-link class="btn btn-warning" to="/signup">Sign up</Router-link>
+                <Router-link class="btn btn-warning" to="/signup">Regisztráció</Router-link>
         </div>
 </template>
 <script setup>
